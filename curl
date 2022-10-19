@@ -1,0 +1,56 @@
+//curl工具
+//跨平台
+//使用:
+curl URL
+
+//post请求:
+curl-X-POST UPL
+curl-XPOST UPL
+
+//查看数据:
+curl-XPOST UPL https://2424229026.github.io/ -d '数据'
+
+//更新数据:
+curl-XPUT https://2424229026.github.io/ -d '数据'
+
+//删除数据:(慎用)
+curl-XDELETE https://2424229026.github.io/ -d '数据'
+
+//-H首部
+//把首部添加到请求里面
+curl-XPOST UPL https://2424229026.github.io/ -H '' -H'' -d '数据'
+//-I
+curl-X-I https://2424229026.github.io/
+
+//直接下载到文件夹
+//-O
+curl-X-O https://2424229026.github.io/
+
+//-o 文件名
+curl-X-o 文件名 https://2424229026.github.io/
+
+//大文件控制下载速度
+//--limit-rate 速度
+curl --limit-rate 速度(100k) -o 文件名 https://2424229026.github.io/
+
+//下载被终止后继续下载
+-C -
+curl -C --o 文件名 https://2424229026.github.io/
+
+//跟随重定向
+//-L
+curl https://2424229026.github.io/ -L
+
+//显示底层联系的信息
+//-v
+curl -v -L https://2424229026.github.io/
+
+//代理访问
+//curl --proxy 协议://用户名:密码@代理地址:断口 URL
+curl --proxy "http://egg:123@127.0.0.1:1234" URL
+
+// 下载文件
+//curl -u 用户名:密码 -O/o ftp://server/egg.avi
+
+//上传文件
+//curl -u 用户名:密码 -T ftp://server(目录位置)
