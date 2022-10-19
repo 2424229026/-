@@ -1,0 +1,37 @@
+//Ping
+
+//检查本机的IP/TCP是否正确安装
+ping 127.0.0.1
+
+//1.ping 本机的IP地址
+//2.ping内网IP(需要联网)
+//3.ping默认网关(一般ping自己的路由器)
+//4.ping 目标IP地址
+//ping 目标主机名
+
+ping -c 6 IP地址
+
+//ICMP 网络层(通常说是IP协议的一部分)
+//echo请求
+//echo响应
+
+//ping命令自己进行计时
+
+//ping localhos (oing 本机)
+
+ 64=8+56
+
+//表示对方主机已经下线或不存在互联网里了也可能是自己输错了
+Destionation Network/host unreachable 
+
+//硬件有问题 网卡有问题 是否拔网线
+Hardware Error
+
+
+ping -a IP地址
+
+//发送时间间隔
+ping -i(秒为单位) 3IP地址
+
+//不想看到ping
+ping -c 100 -q(安静) IP地址
