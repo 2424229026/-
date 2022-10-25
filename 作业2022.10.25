@@ -1,0 +1,31 @@
+//1.允许的并列排名(还不会,以后学)
+
+//2.计算1+3+5+...+n
+#include <stdio.h>
+int main()
+{
+    int i,n,sum;
+    sum=1;
+    scanf("%d",&n);
+    for(i=1;i<n;){
+        i+=2;
+        sum+=i;
+    }
+    printf("%d",sum);
+}
+
+//3.计算1*2*3*...*n
+#include <stdio.h>
+int main(){
+    int i,n,a;
+    scanf("%d",&n);
+    a=1;
+    for(i=1;i<=n;i++){
+        a*=i;
+    }
+    printf("%d",a);
+}
+
+//4.数组逆序(还不会,以后学)
+
+//5.下载电影(还不会,以后学)
